@@ -2,11 +2,14 @@
   "name": "tabla-de-contingencia",
   "version": "1.0.0",
   "private": true,
-  "description": "Starter de Remotion para una infografía vertical, pendiente de definición creativa.",
+  "description": "Estructura base de Remotion para una infografía vertical.",
+  "engines": {
+    "node": ">=24 <25"
+  },
   "scripts": {
-    "studio": "remotion studio src/index.ts",
+    "dev": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts Infografico out/infografico.mp4",
-    "lint": "eslint ."
+    "lint": "eslint . && tsc --noEmit"
   },
   "dependencies": {
     "@remotion/cli": "4.0.544",

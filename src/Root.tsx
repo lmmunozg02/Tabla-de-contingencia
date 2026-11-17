@@ -1,14 +1,16 @@
 import { Composition } from "remotion";
 import { Infografico } from "./Infografico";
+import { ALTO, FPS, ANCHO } from "./styles/formato";
+import { DURACION_INICIAL_EN_FRAMES } from "./styles/tiempos";
 
 export const RemotionRoot: React.FC = () => (
   <Composition
     id="Infografico"
     component={Infografico}
-    durationInFrames={300}
-    fps={30}
-    width={1080}
-    height={1920}
+    durationInFrames={DURACION_INICIAL_EN_FRAMES}
+    fps={FPS}
+    width={ANCHO}
+    height={ALTO}
     defaultProps={{ showSafeArea: false }}
   />
 );

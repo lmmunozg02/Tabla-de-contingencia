@@ -4,6 +4,10 @@ out/
 coverage/
 *.log
 .DS_Store
+Thumbs.db
+Desktop.ini
+.AppleDouble
+._*
 .env
 .env.*
 !.env.example
