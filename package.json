@@ -1,0 +1,33 @@
+{
+  "name": "tabla-de-contingencia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Estructura base de Remotion para una infografía vertical.",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Infografico out/infografico.mp4",
+    "lint": "eslint . && tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.544",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.544"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config": "4.0.544",
+    "@remotion/eslint-plugin": "4.0.544",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@typescript-eslint/eslint-plugin": "8.73.0",
+    "@typescript-eslint/parser": "8.73.0",
+    "eslint": "8.57.1",
+    "eslint-plugin-react": "7.37.4",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "typescript": "5.9.3"
+  }
+}
